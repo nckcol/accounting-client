@@ -1,0 +1,10 @@
+@import "~typeface-roboto";
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~react-bootstrap-table/dist/react-bootstrap-table-all.min.css";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+}
+
