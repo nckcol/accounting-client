@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table'
 import { Loadable } from '../Loadable/Loadable'
+import { HOST, PORT } from '../../config'
 
 class AccountingTable extends Component {
 
@@ -44,7 +45,7 @@ class AccountingTable extends Component {
   }
 
   componentDidMount() {
-    fetch('http://192.168.0.106:8001/acc', {
+    fetch(`http://${HOST}:${PORT}/acc`, {
       method: 'get'
     })
       .then(response => response.json())
